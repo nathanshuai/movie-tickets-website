@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title> Movies Website  </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel=" shortcut icon" href="https://cdn.jsdelivr.net/gh/nathanshuai/cdn/Favorite icon.png?v=2" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nathanshuai/cdn/reset.css" media="all">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Lora&family=Nunito+Sans:wght@400;600;700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+        <link rel="stylesheet" href="assets/style/index.css" media="all">
+        <script src="assets/script/request.js" type="module"></script>   
+    </head>
+    <body>
+      <header>
+        <div class="container">
+          <div class="title">
+            <i class="fa-solid fa-ticket"></i>
+            <h1>Tickets</h1>
+          </div>
+          <nav class="headerlist">
+              <ul>
+                  <li><a href="#">Movies</a></li>
+                  <li><a href="#">Theatres</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">My account</a></li>
+              </ul>
+          </nav>
+          <div class="icon one">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+      </div> 
+      </header>
+      <main>
+        <form>
+          <div class="container">
+            <div class="flex">
+              <div class="input-wrapper">
+                <i class="fa-solid fa-magnifying-glass" ></i>
+                <input type='text' id='name' placeholder='Movie Name' class='name' required>
+                <div id="movie-dropdown"></div>
+              </div>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type='city' id='cities' placeholder='cities' class='cities' required>
+                <div id="city-dropdown"></div>
+              </div>
+              <input type='button' value='Search' class='search'>
+            </div>
+          </div>
+        </form>
+        <div class="container">
+          <h2>Now Playing:</h2>
+          <section>
+          
+          </section>
+        </div>
+      </main>  
+    </body>
+</html>
